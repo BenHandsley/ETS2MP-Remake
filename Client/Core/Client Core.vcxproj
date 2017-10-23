@@ -51,14 +51,14 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>"../../Vendor/RakNet/source";"../../Shared/";"./";"../../Vendor/DXSDK/Include/";"../../Vendor/Detours/";</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"../../Vendor/SLikeNet/Source";"../../Shared/";"./";"../../Vendor/DXSDK/Include/";"../../Vendor/Detours/";</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4409;</DisableSpecificWarnings>
       <PreprocessorDefinitions>DEBUG;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>"../../libs/Debug";"../../Vendor/DXSDK/Lib/x86/";"../../Vendor/Detours/";</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ws2_32.lib;RakNet.lib;detours.lib;dxguid.lib;dinput8.lib;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"../../Vendor/SLikeNet/Lib/prebuild/VS_2017";"../../Vendor/DXSDK/Lib/x86/";"../../Vendor/Detours/";"../../libs/Debug";</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;RakNet_DLL_Debug_core_Win32.lib;detours.lib;dxguid.lib;dinput8.lib;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -67,15 +67,15 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>"../../Vendor/RakNet/source";"../../Shared/";"./";"../../Vendor/DXSDK/Include/";"../../Vendor/Detours/";</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>"../../Vendor/SLikeNet/Source";"../../Shared/";"./";"../../Vendor/DXSDK/Include/";"../../Vendor/Detours/";</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996;4409;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>"../../libs/Release";"../../Vendor/DXSDK/Lib/x86/";"../../Vendor/Detours/";</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ws2_32.lib;RakNet.lib;detours.lib;dxguid.lib;dinput8.lib;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"../../Vendor/SLikeNet/Lib/prebuild/VS_2017";"../../Vendor/DXSDK/Lib/x86/";"../../Vendor/Detours/";"../../libs/Release";</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;RakNet_DLL_Retail_core_Win32.lib;detours.lib;dxguid.lib;dinput8.lib;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>

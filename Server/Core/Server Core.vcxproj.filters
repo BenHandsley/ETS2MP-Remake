@@ -22,12 +22,6 @@
     <Filter Include="Header Files\Libraries">
       <UniqueIdentifier>{654a3662-e7cb-4837-94b2-3ba063ba955b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Libraries">
-      <UniqueIdentifier>{49f7bbb7-c97d-4f04-9841-865b26e9fcb7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Libraries\RakNet">
-      <UniqueIdentifier>{f300dc53-6cf7-429f-bc4a-ac8191d8e2c5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Libraries\RakNet">
       <UniqueIdentifier>{3a9a656a-2622-4a52-b1c1-1b8662e3067d}</UniqueIdentifier>
     </Filter>

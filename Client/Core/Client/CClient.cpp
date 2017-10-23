@@ -20,7 +20,7 @@ CClient::CClient()
 	// Initialize game offsets
 	if(!CGameOffsets::Initialize())
 	{
-		MessageBox(NULL,"Cannot detect game version! Mod currently supports "MOD_SUPPORTED_VERSIONS" please try update or downgrade your game.","Fatal Error",MB_ICONERROR);
+		MessageBox(NULL,"Cannot detect game version! Mod currently supports " MOD_SUPPORTED_VERSIONS " please try update or downgrade your game.","Fatal Error",MB_ICONERROR);
 		ExitProcess(0);
 		return;
 	}
